@@ -8,8 +8,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        myFont: '"Press Start 2P"'
+        myFont: '"Varela Round"'
       },
+      colors: {
+        "light-brown": "#835938",
+        "brown": "#40260A"
+      }
     },
 
   },
