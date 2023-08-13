@@ -12,8 +12,8 @@ export default {
       },
       colors: {
         "light-brown": "#835938",
-        "brown": "#40260A"
-      }
+        "brown": "#40260A",
+      },
     },
 
   },

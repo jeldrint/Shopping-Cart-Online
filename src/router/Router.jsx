@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
 import Shop from "../components/Shop";
-import About from "../components/About";
 import Contact from "../components/Contact";
 import Cart from "../components/Cart";
 
@@ -13,10 +12,6 @@ const Router = () => {
             children:[
                 {path: "shop", element: <Shop />}
             ],
-        },
-        {
-            path: "/about",
-            element: <About />,
         },
         {
             path: "/contact",
