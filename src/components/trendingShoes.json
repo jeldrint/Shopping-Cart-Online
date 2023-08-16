@@ -1,0 +1,38 @@
+[
+  {
+    "id": "jordan-5-metallic",
+    "name": "Air Jordan 5 Retro Black Metallic 2016",
+    "price":72,
+    "itemsLeft":3,
+    "img": "https://kickstw.com.au/wp-content/uploads/2019/05/Air-Jordan-5-Retro-Black-Metallic-2016-GS.jpg",
+    "img-2": "https://kickstw.com.au/wp-content/uploads/2019/09/Air-Jordan-5-Retro-Black-Metallic-2016-2.jpg",
+    "slogan": "50% off! From Php 14,999 to 7,499"
+  },
+  {
+    "id": "jordan-1-brown", 
+    "name": "Nike Air Jordan 1 Retro High Dark Mocha",
+    "price":100,
+    "itemsLeft":5,
+    "img": "https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-high-og-dark-mocha.jpg",
+    "slogan": "starts from Php 9,999"
+  },
+  {
+    "id": "jordan-1-taxi", 
+    "name": "Nike Air Jordan 1 Retro High OG Taxi",
+    "price":120,
+    "itemsLeft":0,
+    "img": "https://sneaker-release.eu/wp-content/uploads/2022/08/Air-Jordan-1-Taxi-555088-711.jpeg",
+    "img-2": "https://sneakerbardetroit.com/wp-content/uploads/2022/03/Air-Jordan-1-Yellow-Toe-Taxi-555088-711-Release-Date-Pricing-1.jpg",
+    "slogan": "New Release! Starts from Php 12,999"
+  },
+  {
+    "id": "jordan-1-orange", 
+    "name": "Nike Air Jordan 1 Retro High OG TS Orange",
+    "price":72,
+    "itemsLeft":10,
+    "img": "https://nike-off.ru/wp-content/uploads/2020/09/nike-air-Jordan-1-high-og-ts-orange-CD4487_105-1-scaled.jpg",
+    "img-2": "https://nike-off.ru/wp-content/uploads/2018/12/air-jordan-1-retro-high-og-orange-555088_113-2.jpg",
+    "img-3": "https://nike-off.ru/wp-content/uploads/2018/12/air-jordan-1-retro-high-og-orange-555088_113-1.jpg",
+    "slogan": "Fashion is on! Starts from Php 9,999"
+  }
+]

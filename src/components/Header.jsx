@@ -3,7 +3,7 @@ import ShoppingIcon from '../images/shopping-bag-blk.png'
 
 const Header = () => {
     return (
-        <header className="sticky top-0 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-900 bg-opacity-90">
+        <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-900 bg-opacity-90">
             <Link to='/' className='text-xl md:text-3xl lg:text-5xl font-bold transition duration-200 hover:invert'>Fresh
                 <span className='text-slate-100'>Kicks</span>
             </Link>
