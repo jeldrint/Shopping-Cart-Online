@@ -9,16 +9,17 @@ const Router = () => {
         {
             path: "/",
             element: <App />,
-            children:[
-                {path: "shop", element: <Shop />}
-            ],
         },
         {
-            path: "/contact",
+            path: "shop",
+            element: <Shop />
+        },
+        {
+            path: "contact",
             element: <Contact />,
         },
         {
-            path: "/cart",
+            path: "cart",
             element: <Cart />,
         },
     ])
