@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import images from '../trendingShoes.json'
+import images from '../shoeAPI.json'
 import Chevron1 from '../../images/chevron-left.png'
 import Chevron2 from '../../images/chevron-right.png'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -9,17 +9,17 @@ const ImageCarousel = () => {
     const [imgIndex, setImgIndex] = useState(0);
 
     const handleNextImage = (e) => {
-        setImgIndex(prev=> prev+1 === images.length ? 0 : prev+1);
+        setImgIndex(prev=> prev+1 === Object.values(images).length ? 0 : prev+1);
     }
 
     const handlePrevImage = (e) => {
-        setImgIndex(prev=> prev-1 < 0 ? images.length -1 : prev-1);
+        setImgIndex(prev=> prev-1 < 0 ? Object.values(images).length -1 : prev-1);
     }
 
     return(
         <section className='w-[80%] lg:w-[80%] relative flex justify-center'>
             <img src={Chevron1} className='w-4 md:w-10 cursor-pointer self-center' onClick={handlePrevImage}/>
-                <img key={imgIndex} src={images[imgIndex].img}
+                <img key={imgIndex} src={Object.values(images.trending)[imgIndex].img}
                     className='bg-cover max-h-[40rem]'
                 />
             <img src={Chevron2} className='w-4 md:w-10 cursor-pointer self-center' onClick={handleNextImage}/>
