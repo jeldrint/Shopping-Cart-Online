@@ -1,5 +1,5 @@
 import Header from "./Header";
-import shoes from './shoeAPI.json'
+import shoesAPI from './shoeAPI.json'
 
 const Shop = () => {
 
@@ -11,23 +11,20 @@ const Shop = () => {
               Filter
           </nav>
           <main className='m-4 col-span-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
-            {Object.values(shoes).map(item=>{
-              return(
-                Object.values(item).map(shoe=>{
-                  console.log(shoe.name)
-                  return(
-                    <div className='border-solid border-2 grid grid-rows-2 auto-rows-auto'>
-                      <img src={shoe.img} className='object-cover max-h-[230px]' />
-                      <div>
-                        <p>{shoe.name}</p>
-                        <p>{shoe.price}</p>
-                      </div>
+            {Object.entries(shoesAPI).filter(shoes => shoes[0] != 'trending')
+              .map(shoes => Object.values(shoes[1]).map(shoe=>{
+                return(
+                  <div key={shoe.name} className='border-solid border-2 grid grid-rows-6 justify-items-center '>
+                    <img src={shoe.img} className='row-span-4 object-cover bg-violet-400' />
+                    <div className='row-span-2 bg-slate-300'>
+                      <p>{shoe.name}</p>
+                      <p>{shoe.price}</p>
                     </div>
-                  )
-                })
-              )
-            })}
-        </main>
+                  </div>
+                )
+              }))
+            }
+          </main>
         </div>
       </div>
   )

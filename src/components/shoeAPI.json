@@ -1,180 +1,123 @@
 {
   "trending": {
-    "jordan-5-metallic": {
-      "name": "Air Jordan 5 Retro Black Metallic 2016",
-      "price":72,
-      "itemsLeft":3,
-      "img": "https://kickstw.com.au/wp-content/uploads/2019/05/Air-Jordan-5-Retro-Black-Metallic-2016-GS.jpg",
-      "img-2": "https://kickstw.com.au/wp-content/uploads/2019/09/Air-Jordan-5-Retro-Black-Metallic-2016-2.jpg",
-      "slogan": "50% off! From Php 14,999 to 7,499"
+    "nike-air-jordan-mid-women-s-basketball-shoes-white": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - WHITE",
+      "price":7095,
+      "itemsLeft":20,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647218600W07H-1.jpg",
+      "slogan": "50% off! Original Price: Php 14,190"
     },
-    "jordan-1-brown": {
-      "name": "Nike Air Jordan 1 Retro High Dark Mocha",
-      "price":100,
+    "nike-air-jordan-retro-men-s-basketball-shoes-black": {
+      "name": "NIKE AIR JORDAN 5 RETRO MEN'S BASKETBALL SHOES - BLACK",
+      "price":8716,
       "itemsLeft":5,
-      "img": "https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-high-og-dark-mocha.jpg",
-      "slogan": "starts from Php 9,999"
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDD0587047005008-1.jpg",
+      "slogan": "20% off! Original Price: Php 10,895"
     },
-    "jordan-1-taxi": {
-      "name": "Nike Air Jordan 1 Retro High OG Taxi",
-      "price":120,
-      "itemsLeft":0,
-      "img": "https://sneaker-release.eu/wp-content/uploads/2022/08/Air-Jordan-1-Taxi-555088-711.jpeg",
-      "img-2": "https://sneakerbardetroit.com/wp-content/uploads/2022/03/Air-Jordan-1-Yellow-Toe-Taxi-555088-711-Release-Date-Pricing-1.jpg",
-      "slogan": "New Release! Starts from Php 12,999"
+    "nike-air-jordan-mid-women-s-basketball-shoes-red-blue": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - RED / BLUE",
+      "price":7095,
+      "itemsLeft":7,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647214600W005-1.jpg",
+      "slogan": "New Release! Starts from Php 7,095"
     },
-    "jordan-1-orange": { 
-      "name": "Nike Air Jordan 1 Retro High OG TS Orange",
-      "price":72,
+    "nike-air-jordan-low-women-s-basketball-shoes-lucky-green": { 
+      "name": "NIKE AIR JORDAN 1 LOW WOMEN'S BASKETBALL SHOES - LUCKY GREEN",
+      "price":9999,
       "itemsLeft":10,
-      "img": "https://nike-off.ru/wp-content/uploads/2020/09/nike-air-Jordan-1-high-og-ts-orange-CD4487_105-1-scaled.jpg",
-      "img-2": "https://nike-off.ru/wp-content/uploads/2018/12/air-jordan-1-retro-high-og-orange-555088_113-2.jpg",
-      "img-3": "https://nike-off.ru/wp-content/uploads/2018/12/air-jordan-1-retro-high-og-orange-555088_113-1.jpg",
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
       "slogan": "Fashion is on! Starts from Php 9,999"
     }
   },
   "men-shoes":{
-    "air-jordan-3-valor-blue": {
-      "name": "Air Jordan 3 Valor Blue",
-      "price":72,
-      "itemsLeft":3,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "jordan-mars-270-london": {
-      "name": "Jordan Mars 270 London",
-      "price":100,
+    "nike-air-jordan-retro-men-s-basketball-shoes-black": {
+      "name": "NIKE AIR JORDAN 5 RETRO MEN'S BASKETBALL SHOES - BLACK",
+      "price":8716,
       "itemsLeft":5,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDD0587047005008-1.jpg",
+      "slogan": "20% off! Original Price: Php 10,895",
+      "new-arrival": true
     },
-    "air-jordan-1-zoom-racer-blue": {
-      "name": "Air Jordan 1 Zoom Racer Blue",
-      "price":120,
-      "itemsLeft":0,
+    "new-balance-r-men-s-sneakers-grey": {
+      "name": "NEW BALANCE 2002R MEN'S SNEAKERS - GREY",
+      "price":10295,
+      "itemsLeft":35,
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NEWML2002R0GRE009-1.jpg",
+      "new-arrival": false
     },
-    "cosmic-unity-basketball-shoe": {
-      "name": "Cosmic Unity Basketball Shoe",
-      "price":72,
-      "itemsLeft":10,
+    "nike-air-force-men-s-sneakers-white": {
+      "name": "NIKE AIR FORCE 1 '07 MEN'S SNEAKERS - WHITE",
+      "price":5495,
+      "itemsLeft":15,
       "img":
-        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/214f6074-9556-4d05-822c-17d2eb946875/cosmic-unity-basketball-shoe-nDHKr4.png"
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT230210000W09H-1.jpg",
+      "new-arrival": true
     },
-    "nike-react-infinity-run-flyknit":{
-      "name":"Nike React Infinity Run Flyknit",
-      "price":90,
+    "nike-air-jordan-retro-men-s-basketball-shoes-white": {
+      "name": "NIKE AIR JORDAN 6 RETRO MEN'S BASKETBALL SHOES - WHITE",
+      "price":10895,
+      "itemsLeft":13,
+      "img":
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT852910000W007-1.jpg",
+      "new-arrival": false
+    },
+    "nike-air-jordan-xxxvii-low-pf-men-s-basketball-shoes-black":{
+      "name":"NIKE AIR JORDAN XXXVII LOW PF MEN'S BASKETBALL SHOES - BLACK",
+      "price":9045,
       "itemsLeft":7,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
-    },
-    "nike-react-miler":{
-      "name":"Nike React Miler",
-      "price":30,
-      "itemsLeft":1,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg"
-    },   
-    "michael-feburary-sk8-high":{
-      "name":"Michael February Sk8 High",
-      "price":56,
-      "itemsLeft":10,
-      "img":"https://images.vans.com/is/image/Vans/MV122M-HERO?$583x583$"
+      "img":"https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDQ4123061005012-1.jpg",
+      "new-arrival": true
     }
   },
   "women-shoes":{
-    "air-jordan-3-valor-blue": {
-      "name": "Air Jordan 3 Valor Blue",
-      "price":72,
-      "itemsLeft":3,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+    "nike-air-jordan-mid-women-s-basketball-shoes-white": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - WHITE",
+      "price": 7095,
+      "itemsLeft":20,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647218600W07H-1.jpg",
+      "slogan": "50% off! Original Price: Php 14,190",
+      "new-arrival": true
     },
-    "jordan-mars-270-london": {
-      "name": "Jordan Mars 270 London",
-      "price":100,
-      "itemsLeft":5,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "air-jordan-1-zoom-racer-blue": {
-      "name": "Air Jordan 1 Zoom Racer Blue",
-      "price":120,
-      "itemsLeft":0,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "cosmic-unity-basketball-shoe": {
-      "name": "Cosmic Unity Basketball Shoe",
-      "price":72,
-      "itemsLeft":10,
-      "img":
-        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/214f6074-9556-4d05-822c-17d2eb946875/cosmic-unity-basketball-shoe-nDHKr4.png"
-    },
-    "nike-react-infinity-run-flyknit":{
-      "name":"Nike React Infinity Run Flyknit",
-      "price":90,
+    "nike-air-jordan-mid-women-s-basketball-shoes-red-blue": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - RED / BLUE",
+      "price": 7095,
       "itemsLeft":7,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647214600W005-1.jpg",
+      "slogan": "New Release! Starts from Php 7,095",
+      "new-arrival": false
     },
-    "nike-react-miler":{
-      "name":"Nike React Miler",
-      "price":30,
-      "itemsLeft":1,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg"
-    },   
-    "michael-feburary-sk8-high":{
-      "name":"Michael February Sk8 High",
-      "price":56,
+    "nike-air-force-lv-men-s-sneakers-shoes-white": {
+      "name": "NIKE AIR FORCE 1 '07 LV8 MEN'S SNEAKERS SHOES - WHITE",
+      "price": 6895,
+      "itemsLeft":7,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDZ252210000W10H-1.jpg",
+      "slogan": "New Release! Starts from Php 7,095",
+      "new-arrival": false
+    },
+    "nike-air-jordan-low-women-s-basketball-shoes-lucky-green": { 
+      "name": "NIKE AIR JORDAN 1 LOW WOMEN'S BASKETBALL SHOES - LUCKY GREEN",
+      "price":9999,
       "itemsLeft":10,
-      "img":"https://images.vans.com/is/image/Vans/MV122M-HERO?$583x583$"
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
+      "slogan": "Fashion is on! Starts from Php 9,999",
+      "new-arrival": true
+    },
+    "nike-air-jordan-retro-low-women-s-basketball-shoes-white": { 
+      "name": "NIKE AIR JORDAN 11 RETRO LOW WOMEN'S BASKETBALL SHOES - WHITE / YELLOW",
+      "price":10295,
+      "itemsLeft":10,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKAH786010700W006-1.jpg",
+      "new-arrival": true
+    },
+    "nike-cortez-women-s-sneakers-shoes-white": { 
+      "name": "NIKE CORTEZ WOMEN'S SNEAKERS SHOES - WHITE",
+      "price":10295,
+      "itemsLeft":123,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDN179110300W08H-1.jpg",
+      "new-arrival": true
     }
   },
   "kids-shoes":{
-    "air-jordan-3-valor-blue": {
-      "name": "Air Jordan 3 Valor Blue",
-      "price":72,
-      "itemsLeft":3,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "jordan-mars-270-london": {
-      "name": "Jordan Mars 270 London",
-      "price":100,
-      "itemsLeft":5,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "air-jordan-1-zoom-racer-blue": {
-      "name": "Air Jordan 1 Zoom Racer Blue",
-      "price":120,
-      "itemsLeft":0,
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
-    },
-    "cosmic-unity-basketball-shoe": {
-      "name": "Cosmic Unity Basketball Shoe",
-      "price":72,
-      "itemsLeft":10,
-      "img":
-        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/214f6074-9556-4d05-822c-17d2eb946875/cosmic-unity-basketball-shoe-nDHKr4.png"
-    },
-    "nike-react-infinity-run-flyknit":{
-      "name":"Nike React Infinity Run Flyknit",
-      "price":90,
-      "itemsLeft":7,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
-    },
-    "nike-react-miler":{
-      "name":"Nike React Miler",
-      "price":30,
-      "itemsLeft":1,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg"
-    },   
-    "michael-feburary-sk8-high":{
-      "name":"Michael February Sk8 High",
-      "price":56,
-      "itemsLeft":10,
-      "img":"https://images.vans.com/is/image/Vans/MV122M-HERO?$583x583$"
-    }
-  }
+ }
 }
