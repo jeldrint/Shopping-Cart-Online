@@ -10,15 +10,21 @@ const Shop = () => {
           <nav className='bg-sky-500 col-span-1'>
               Filter
           </nav>
-          <main className='m-4 col-span-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+          <main className='m-4 col-span-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
             {Object.entries(shoesAPI).filter(shoes => shoes[0] != 'trending')
               .map(shoes => Object.values(shoes[1]).map(shoe=>{
                 return(
-                  <div key={shoe.name} className='border-solid border-2 grid grid-rows-6 justify-items-center '>
-                    <img src={shoe.img} className='row-span-4 object-cover bg-violet-400' />
-                    <div className='row-span-2 bg-slate-300'>
-                      <p>{shoe.name}</p>
-                      <p>{shoe.price}</p>
+                  <div key={shoe.name} className='border-solid border-2 grid grid-rows-7 content-start p-2 lg:p-4 cursor-pointer transition duration-250 hover:opacity-70 '>
+                    <img src={shoe.img} className='row-span-5 object-cover' />
+                    <div className='row-span-2 w-full font-myFont text-xs flex flex-col gap-y-1'>
+                      <span>{shoe.name}</span>
+                      {shoe.discount != null ? 
+                        <div className='text-sm flex flex-col'>
+                        <span className='text-red-500 line-through'>{'\u20B1 '}{(Math.round(shoe.price*100)/100).toLocaleString(undefined, {minimumFractionDigits: 2})}</span>
+                        <span >{'\u20B1 '}{(Math.round((shoe.price - shoe.price * shoe.discount)*100)/100).toLocaleString(undefined, {minimumFractionDigits: 2})}</span>                      
+                        </div> :
+                        <span className='text-sm pt-3 md:pt-2'>{'\u20B1 '}{(Math.round(shoe.price*100)/100).toLocaleString(undefined, {minimumFractionDigits: 2})}</span>
+                      }
                     </div>
                   </div>
                 )

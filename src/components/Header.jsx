@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to='/shop' className='transition-opacity hover:opacity-50'>Kids</Link>
                 <Link to='/contact' className='transition-opacity hover:opacity-50 hidden md:inline-block'>Contact</Link>
                 <Link to='/cart'>
-                    <div className='flex items-center transition-opacity hover:opacity-50'>
+                    <div className='flex items-center transition-opacity hover:opacity-70'>
                         <img alt='shopping-cart' src={ShoppingIcon} className='w-4 md:w-5 lg:w-7 invert'></img>
                         <span className='bg-white text-black text-xs md:text-sm px-1.5 py-0.25 rounded-xl'>100</span>
                     </div>

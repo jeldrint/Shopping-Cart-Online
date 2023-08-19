@@ -1,4 +1,107 @@
 {
+  "men-shoes":{
+    "nike-air-jordan-retro-men-s-basketball-shoes-black": {
+      "name": "NIKE AIR JORDAN 5 RETRO MEN'S BASKETBALL SHOES - BLACK",
+      "price":8716,
+      "discount": null,
+      "itemsLeft":5,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDD0587047005008-1.jpg",
+      "slogan": "20% off! Original Price: Php 10,895",
+      "new-arrival": true
+    },
+    "new-balance-r-men-s-sneakers-grey": {
+      "name": "NEW BALANCE 2002R MEN'S SNEAKERS - GREY",
+      "price":10295,
+      "discount": 0.2,
+      "itemsLeft":35,
+      "img":
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NEWML2002R0GRE009-1.jpg",
+      "new-arrival": false
+    },
+    "nike-air-force-men-s-sneakers-white": {
+      "name": "NIKE AIR FORCE 1 '07 MEN'S SNEAKERS - WHITE",
+      "price":5495,
+      "discount": 0.05,
+      "itemsLeft":15,
+      "img":
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT230210000W09H-1.jpg",
+      "new-arrival": true
+    },
+    "nike-air-jordan-retro-men-s-basketball-shoes-white": {
+      "name": "NIKE AIR JORDAN 6 RETRO MEN'S BASKETBALL SHOES - WHITE",
+      "price":10895,
+      "discount": 0.2,
+      "itemsLeft":13,
+      "img":
+        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT852910000W007-1.jpg",
+      "new-arrival": false
+    },
+    "nike-air-jordan-xxxvii-low-pf-men-s-basketball-shoes-black":{
+      "name":"NIKE AIR JORDAN XXXVII LOW PF MEN'S BASKETBALL SHOES - BLACK",
+      "price":9045,
+      "itemsLeft":7,
+      "discount": null,
+      "img":"https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDQ4123061005012-1.jpg",
+      "new-arrival": true
+    }
+  },
+  "women-shoes":{
+    "nike-air-jordan-mid-women-s-basketball-shoes-white": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - WHITE",
+      "price": 7095,
+      "discount": 0.1,
+      "itemsLeft":20,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647218600W07H-1.jpg",
+      "slogan": "50% off! Original Price: Php 14,190",
+      "new-arrival": true
+    },
+    "nike-air-jordan-mid-women-s-basketball-shoes-red-blue": {
+      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - RED / BLUE",
+      "price": 7095,
+      "discount": null,
+      "itemsLeft":7,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647214600W005-1.jpg",
+      "slogan": "New Release! Starts from Php 7,095",
+      "new-arrival": false
+    },
+    "nike-air-force-lv-men-s-sneakers-shoes-white": {
+      "name": "NIKE AIR FORCE 1 '07 LV8 MEN'S SNEAKERS - WHITE",
+      "price": 6895,
+      "discount": 0.15,
+      "itemsLeft":7,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDZ252210000W10H-1.jpg",
+      "slogan": "New Release! Starts from Php 7,095",
+      "new-arrival": false
+    },
+    "nike-air-jordan-low-women-s-basketball-shoes-lucky-green": { 
+      "name": "NIKE AIR JORDAN 1 LOW WOMEN'S - LUCKY GREEN",
+      "price":9999,
+      "discount": 0.2,
+      "itemsLeft":10,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
+      "slogan": "Fashion is on! Starts from Php 9,999",
+      "new-arrival": false
+    },
+    "nike-air-jordan-retro-low-women-s-basketball-shoes-white": { 
+      "name": "NIKE AIR JORDAN 11 RETRO LOW WOMEN'S - WHITE / YELLOW",
+      "price":10295,
+      "discount": 0.1,
+      "itemsLeft":10,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKAH786010700W006-1.jpg",
+      "new-arrival": true
+    },
+    "nike-cortez-women-s-sneakers-shoes-white": { 
+      "name": "NIKE CORTEZ WOMEN'S SNEAKERS SHOES - WHITE",
+      "price":10295,
+      "discount": 0.25,
+      "itemsLeft":123,
+      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDN179110300W08H-1.jpg",
+      "new-arrival": true
+    }
+  },
+  "kids-shoes":{
+  },
+
   "trending": {
     "nike-air-jordan-mid-women-s-basketball-shoes-white": {
       "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - WHITE",
@@ -28,96 +131,5 @@
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
       "slogan": "Fashion is on! Starts from Php 9,999"
     }
-  },
-  "men-shoes":{
-    "nike-air-jordan-retro-men-s-basketball-shoes-black": {
-      "name": "NIKE AIR JORDAN 5 RETRO MEN'S BASKETBALL SHOES - BLACK",
-      "price":8716,
-      "itemsLeft":5,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDD0587047005008-1.jpg",
-      "slogan": "20% off! Original Price: Php 10,895",
-      "new-arrival": true
-    },
-    "new-balance-r-men-s-sneakers-grey": {
-      "name": "NEW BALANCE 2002R MEN'S SNEAKERS - GREY",
-      "price":10295,
-      "itemsLeft":35,
-      "img":
-        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NEWML2002R0GRE009-1.jpg",
-      "new-arrival": false
-    },
-    "nike-air-force-men-s-sneakers-white": {
-      "name": "NIKE AIR FORCE 1 '07 MEN'S SNEAKERS - WHITE",
-      "price":5495,
-      "itemsLeft":15,
-      "img":
-        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT230210000W09H-1.jpg",
-      "new-arrival": true
-    },
-    "nike-air-jordan-retro-men-s-basketball-shoes-white": {
-      "name": "NIKE AIR JORDAN 6 RETRO MEN'S BASKETBALL SHOES - WHITE",
-      "price":10895,
-      "itemsLeft":13,
-      "img":
-        "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT852910000W007-1.jpg",
-      "new-arrival": false
-    },
-    "nike-air-jordan-xxxvii-low-pf-men-s-basketball-shoes-black":{
-      "name":"NIKE AIR JORDAN XXXVII LOW PF MEN'S BASKETBALL SHOES - BLACK",
-      "price":9045,
-      "itemsLeft":7,
-      "img":"https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDQ4123061005012-1.jpg",
-      "new-arrival": true
-    }
-  },
-  "women-shoes":{
-    "nike-air-jordan-mid-women-s-basketball-shoes-white": {
-      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - WHITE",
-      "price": 7095,
-      "itemsLeft":20,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647218600W07H-1.jpg",
-      "slogan": "50% off! Original Price: Php 14,190",
-      "new-arrival": true
-    },
-    "nike-air-jordan-mid-women-s-basketball-shoes-red-blue": {
-      "name": "NIKE AIR JORDAN 1 MID WOMEN'S BASKETBALL SHOES - RED / BLUE",
-      "price": 7095,
-      "itemsLeft":7,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647214600W005-1.jpg",
-      "slogan": "New Release! Starts from Php 7,095",
-      "new-arrival": false
-    },
-    "nike-air-force-lv-men-s-sneakers-shoes-white": {
-      "name": "NIKE AIR FORCE 1 '07 LV8 MEN'S SNEAKERS SHOES - WHITE",
-      "price": 6895,
-      "itemsLeft":7,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDZ252210000W10H-1.jpg",
-      "slogan": "New Release! Starts from Php 7,095",
-      "new-arrival": false
-    },
-    "nike-air-jordan-low-women-s-basketball-shoes-lucky-green": { 
-      "name": "NIKE AIR JORDAN 1 LOW WOMEN'S BASKETBALL SHOES - LUCKY GREEN",
-      "price":9999,
-      "itemsLeft":10,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
-      "slogan": "Fashion is on! Starts from Php 9,999",
-      "new-arrival": true
-    },
-    "nike-air-jordan-retro-low-women-s-basketball-shoes-white": { 
-      "name": "NIKE AIR JORDAN 11 RETRO LOW WOMEN'S BASKETBALL SHOES - WHITE / YELLOW",
-      "price":10295,
-      "itemsLeft":10,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKAH786010700W006-1.jpg",
-      "new-arrival": true
-    },
-    "nike-cortez-women-s-sneakers-shoes-white": { 
-      "name": "NIKE CORTEZ WOMEN'S SNEAKERS SHOES - WHITE",
-      "price":10295,
-      "itemsLeft":123,
-      "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDN179110300W08H-1.jpg",
-      "new-arrival": true
-    }
-  },
-  "kids-shoes":{
- }
+  }
 }
