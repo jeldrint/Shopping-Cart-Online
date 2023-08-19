@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
+import Home from "../components/Home";
 import Shop from "../components/Shop";
 import Contact from "../components/Contact";
 import Cart from "../components/Cart";
@@ -9,10 +10,10 @@ const Router = () => {
         {
             path: "/",
             element: <App />,
-        },
-        {
-            path: "shop",
-            element: <Shop />
+            children: [
+                {path: 'home', element: <Home />},
+                {path: 'shop', element: <Shop />}
+            ]
         },
         {
             path: "contact",
