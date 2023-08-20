@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import Shop from "../components/Shop";
 import Contact from "../components/Contact";
 import Cart from "../components/Cart";
+import ShopSolo from "../components/ShopSolo";
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -13,7 +14,8 @@ const Router = () => {
             children: [
                 {path: 'home', element: <Home />},
                 {path: 'shop', element: <Shop />},
-                {path: 'shop/:name', element: <Shop />}
+                {path: 'shop/:name', element: <Shop />},
+                {path: ':id', element: <ShopSolo />}
             ]
         },
         {
