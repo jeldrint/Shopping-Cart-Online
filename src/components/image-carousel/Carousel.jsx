@@ -17,11 +17,11 @@ const ImageCarousel = () => {
     }
 
     return(
-        <section className='w-[80%] lg:w-[80%] relative flex justify-center'>
+        <section className='w-[80%] md:w-[90%] lg:w-full relative flex justify-center'>
             <img src={Chevron1} className='w-4 md:w-10 cursor-pointer self-center' onClick={handlePrevImage}/>
-                <img key={imgIndex} src={Object.values(images.trending)[imgIndex].img}
-                    className='bg-cover max-h-[40rem]'
-                />
+            <img key={imgIndex} src={Object.values(images.trending)[imgIndex].img}
+                className='bg-cover max-h-[40rem]'
+            />
             <img src={Chevron2} className='w-4 md:w-10 cursor-pointer self-center' onClick={handleNextImage}/>
             <span className='bg-white text-black absolute bottom-0 left-[50%]'>
                 <span>o</span>

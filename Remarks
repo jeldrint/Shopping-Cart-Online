@@ -1,0 +1,14 @@
+Things to do
+1. Work on the shop navigation page (the page once the user has clicked on an item).
+2. Cart / useState
+3. Homepage contents
+4. Others (bug fixes, etc.)
+
+
+
+Aug 20, 2023
+* I fixed the DOM Tree, and remove the filter for now since I don't have anything to filter on, just the gender and if the product is a new arrival or not. Later maybe I will work on the filter if there are any other categories that I can use.
+* I tried to use /shop/<any extension here> but I still redirect to the Shop component. I don't know if it is a good design so I will not put any router / anchors for the {category} for now.
+
+
+* Fixed the cards border, Tailwind style

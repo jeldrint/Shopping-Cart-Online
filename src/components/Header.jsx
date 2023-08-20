@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
 import ShoppingIcon from '../images/shopping-bag-blk.png'
 
-const Header = ({setCategory}) => {
-
-    const handleCategory = (e) => {
-        console.log(e.target.id)
-        setCategory(e.target.id);
-    }
+const Header = () => {
 
     return (
         <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-900 bg-opacity-90">
@@ -14,19 +9,19 @@ const Header = ({setCategory}) => {
                 <span className='text-slate-100'>Kicks</span>
             </Link>
             <section className='list-none cursor-pointer flex items-center gap-x-3 md:gap-x-5 lg:gap-x-7 text-slate-300 text-xs md:text-base lg:text-lg xl:text-xl'>
-                <Link to='/shop' className='transition-opacity hover:opacity-50' onClick={handleCategory} >
+                <Link to='/shop' className='transition-opacity hover:opacity-50'>
                     Shop Now!
                 </Link>
-                <Link to='/shop' className='transition-opacity hover:opacity-50 hidden md:inline-block' id='new-arrival' onClick={handleCategory}>
+                <Link to='/shop/new-arrival' className='transition-opacity hover:opacity-50 hidden md:inline-block' id='new-arrival'>
                     New Arrival
                 </Link>
-                <Link to='/shop' className='transition-opacity hover:opacity-50' id='men' onClick={handleCategory} >
+                <Link to='/shop/men' className='transition-opacity hover:opacity-50' id='men'>
                     Men
                 </Link>
-                <Link to='/shop' className='transition-opacity hover:opacity-50' id='women' onClick={handleCategory} >
+                <Link to='/shop/women' className='transition-opacity hover:opacity-50' id='women'>
                     Women
                 </Link>
-                <Link to='/shop' className='transition-opacity hover:opacity-50' id='kids' onClick={handleCategory} >
+                <Link to='/shop/kids' className='transition-opacity hover:opacity-50' id='kids'>
                     Kids
                 </Link>
                 <Link to='/contact' className='transition-opacity hover:opacity-50 hidden md:inline-block'>

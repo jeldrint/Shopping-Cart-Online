@@ -1,24 +1,24 @@
 import shoesAPI from './shoeAPI.json'
-import { useOutletContext } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 const Shop = () => {
-  const category = useOutletContext();
+  const {name} = useParams();
 
   return(
-      <main className='w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 content-start gap-3'>
+      <main className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 content-start gap-3'>
         {Object.entries(shoesAPI).filter(shoes => shoes[0] === 'general')
           .map(shoes => Object.values(shoes[1]).filter(item =>
             {
               return(
-                  category === 'men' ? item['men-women-kids'][0] === true :
-                  category === 'women' ? item['men-women-kids'][1] === true :
-                  category === 'kids' ? item['men-women-kids'][2] === true :
-                  category === 'new-arrival' ? item['new-arrival'] === true : item
+                name === 'men' ? item['men-women-kids'][0] === true :
+                name === 'women' ? item['men-women-kids'][1] === true :
+                name === 'kids' ? item['men-women-kids'][2] === true :
+                name === 'new-arrival' ? item['new-arrival'] === true : item
               )
             })
           .map(shoe=>{
             return(
-              <div key={shoe.name} className='border-solid border-2 grid grid-rows-7 content-between p-2 lg:p-4 cursor-pointer transition duration-250 hover:opacity-80 '>
+              <div key={shoe.name} className='max-w-xs rounded shadow-lg border-2 grid grid-rows-7 content-between p-2 lg:p-4 cursor-pointer transition duration-250 hover:opacity-80 '>
                 <img src={shoe.img} className='row-span-5 object-cover' />
                 <div className='row-span-2 w-full font-myFont text-xs flex flex-col gap-y-1'>
                   <span>{shoe.name}</span>

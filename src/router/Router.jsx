@@ -12,7 +12,8 @@ const Router = () => {
             element: <App />,
             children: [
                 {path: 'home', element: <Home />},
-                {path: 'shop', element: <Shop />}
+                {path: 'shop', element: <Shop />},
+                {path: 'shop/:name', element: <Shop />}
             ]
         },
         {
