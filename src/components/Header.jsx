@@ -14,11 +14,11 @@ const Header = ({setCategory}) => {
                 <span className='text-slate-100'>Kicks</span>
             </Link>
             <section className='list-none cursor-pointer flex items-center gap-x-3 md:gap-x-5 lg:gap-x-7 text-slate-300 text-xs md:text-base lg:text-lg xl:text-xl'>
+                <Link to='/shop' className='transition-opacity hover:opacity-50' onClick={handleCategory} >
+                    Shop Now!
+                </Link>
                 <Link to='/shop' className='transition-opacity hover:opacity-50 hidden md:inline-block' id='new-arrival' onClick={handleCategory}>
                     New Arrival
-                </Link>
-                <Link to='/shop' className='transition-opacity hover:opacity-50'>
-                    Shop Now!
                 </Link>
                 <Link to='/shop' className='transition-opacity hover:opacity-50' id='men' onClick={handleCategory} >
                     Men

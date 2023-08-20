@@ -9,11 +9,11 @@ const ImageCarousel = () => {
     const [imgIndex, setImgIndex] = useState(0);
 
     const handleNextImage = (e) => {
-        setImgIndex(prev=> prev+1 === Object.values(images).length ? 0 : prev+1);
+        setImgIndex(prev=> prev+1 === Object.values(images.trending).length ? 0 : prev+1);
     }
 
     const handlePrevImage = (e) => {
-        setImgIndex(prev=> prev-1 < 0 ? Object.values(images).length -1 : prev-1);
+        setImgIndex(prev=> prev-1 < 0 ? Object.values(images.trending).length -1 : prev-1);
     }
 
     return(
