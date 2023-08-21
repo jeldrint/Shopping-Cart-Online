@@ -8,7 +8,18 @@
       "itemsLeft":5,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDD0587047005008-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [true,false,true]
+      "men-women-kids": [true,false,true],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": true, "US-8.5": true, "US-9": true, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": false, "US-5.5": false, "US-6": false, "US-6.5": false, "US-7": false, "US-7.5": false, "US-8": false
+        },
+        "kids": {
+          "US-4C": true, "US-5C": false, "US-6C": true, "US-7C": true, "US-8C": true, "US-9C": true, "US-10C": true
+        }
+      }
     },
     "new-balance-r-sneakers-grey": {
       "id": "new-balance-r-sneakers-grey",
@@ -19,7 +30,18 @@
       "img":
         "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NEWML2002R0GRE009-1.jpg",
       "new-arrival": false,
-      "men-women-kids": [true,false,false]
+      "men-women-kids": [true,false,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": false, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": false, "US-5.5": false, "US-6": false, "US-6.5": false, "US-7": false, "US-7.5": false, "US-8": false
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-force-sneakers-white": {
       "id": "nike-air-force-sneakers-white",
@@ -30,7 +52,18 @@
       "img":
         "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT230210000W09H-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [true,true,false]
+      "men-women-kids": [true,true,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": false, "US-8.5": true, "US-9": false, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": true, "US-6.5": false, "US-7": true, "US-7.5": false, "US-8": true
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-jordan-retro-basketball-shoes-metallic-white": {
       "id": "nike-air-jordan-retro-basketball-shoes-metallic-white",
@@ -41,7 +74,18 @@
       "img":
         "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKCT852910000W007-1.jpg",
       "new-arrival": false,
-      "men-women-kids": [true,false,false]
+      "men-women-kids": [true,false,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": true, "US-10": false, "US-11": true
+        },
+        "women": {
+          "US-5": false, "US-5.5": false, "US-6": false, "US-6.5": false, "US-7": false, "US-7.5": false, "US-8": false
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-jordan-xxxvii-low-pf-basketball-shoes-black":{
       "id": "nike-air-jordan-xxxvii-low-pf-basketball-shoes-black",
@@ -51,7 +95,18 @@
       "discount": null,
       "img":"https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDQ4123061005012-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [true,false,false]
+      "men-women-kids": [true,false,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": true, "US-8.5": true, "US-9": false, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": false, "US-5.5": false, "US-6": false, "US-6.5": false, "US-7": false, "US-7.5": false, "US-8": false
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },    
     "nike-air-jordan-mid-basketball-shoes-pink": {
       "id": "nike-air-jordan-mid-basketball-shoes-pink",
@@ -61,7 +116,18 @@
       "itemsLeft":20,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647218600W07H-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [true,true,false]
+      "men-women-kids": [true,true,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": false, "US-6.5": false, "US-7": true, "US-7.5": false, "US-8": true
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "new-balance-sneakers-shoes-baby-pink": {
       "id": "new-balance-sneakers-shoes-baby-pink",
@@ -71,7 +137,18 @@
       "itemsLeft":17,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NEWU574FPP0PK08H-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [false,true,false]
+      "men-women-kids": [false,true,false],
+      "size": {
+        "men": {
+          "US-6": false, "US-7": false, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": false, "US-10": false, "US-11": false
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": true, "US-6.5": true, "US-7": true, "US-7.5": true, "US-8": true
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-jordan-mid-basketball-shoes-red-blue": {
       "id": "nike-air-jordan-mid-basketball-shoes-red-blue",
@@ -81,7 +158,18 @@
       "itemsLeft":7,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKBQ647214600W005-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [true,true,false]
+      "men-women-kids": [true,true,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": true, "US-8.5": true, "US-9": true, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": true, "US-6.5": true, "US-7": true, "US-7.5": true, "US-8": true
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-force-lv-sneakers-shoes-baby-blue": {
       "id": "nike-air-force-lv-sneakers-shoes-baby-blue",
@@ -91,7 +179,19 @@
       "itemsLeft":7,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDZ252210000W10H-1.jpg",
       "new-arrival": false,
-      "men-women-kids": [true,true,true]
+      "men-women-kids": [true,true,true],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": true, "US-8.5": true, "US-9": false, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": true, "US-6.5": false, "US-7": false, "US-7.5": true, "US-8": true
+        },
+        "kids": {
+          "US-4C": true, "US-5C": true, "US-6C": false, "US-7C": true, "US-8C": true, "US-9C": true, "US-10C": true
+        }
+      }
+
     },
     "nike-air-jordan-low-basketball-shoes-lucky-green": {
       "id": "nike-air-jordan-low-basketball-shoes-lucky-green",
@@ -101,7 +201,18 @@
       "itemsLeft":10,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDC077430400G08H-1.jpg",
       "new-arrival": false,
-      "men-women-kids": [true,true,false]
+      "men-women-kids": [true,true,false],
+      "size": {
+        "men": {
+          "US-6": true, "US-7": true, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": true, "US-10": true, "US-11": true
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": false, "US-6.5": false, "US-7": false, "US-7.5": true, "US-8": false
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     },
     "nike-air-jordan-retro-low-basketball-shoes-white-yellow": {
       "id": "nike-air-jordan-retro-low-basketball-shoes-white-yellow",
@@ -111,7 +222,19 @@
       "itemsLeft":10,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKAH786010700W006-1.jpg",
       "new-arrival": true,
-      "men-women-kids": [false,true,true]
+      "men-women-kids": [false,true,true],
+      "size": {
+        "men": {
+          "US-6": false, "US-7": false, "US-8": false, "US-8.5": false, "US-9": false, "US-9.5": false, "US-10": false, "US-11": false
+        },
+        "women": {
+          "US-5": true, "US-5.5": true, "US-6": true, "US-6.5": false, "US-7": false, "US-7.5": true, "US-8": true
+        },
+        "kids": {
+          "US-4C": true, "US-5C": false, "US-6C": false, "US-7C": true, "US-8C": true, "US-9C": false, "US-10C": true
+        }
+      }
+
     },
     "nike-cortez-sneakers-shoes-white-maroon": {
       "id": "nike-cortez-sneakers-shoes-white-maroon",
@@ -121,7 +244,18 @@
       "itemsLeft":123,
       "img": "https://www.footlocker.ph/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0803-NIKDN179110300W08H-1.jpg",
       "new-arrival": false,
-      "men-women-kids": [false,true,false]
+      "men-women-kids": [false,true,false],
+      "size": {
+        "men": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        },
+        "women": {
+          "US-5": true, "US-5.5": false, "US-6": false, "US-6.5": true, "US-7": false, "US-7.5": true, "US-8": false
+        },
+        "kids": {
+          "US-4C": false, "US-5C": false, "US-6C": false, "US-7C": false, "US-8C": false, "US-9C": false, "US-10C": false
+        }
+      }
     }
   },
   "trending": {

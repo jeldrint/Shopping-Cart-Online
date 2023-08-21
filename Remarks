@@ -11,7 +11,17 @@ Aug 20, 2023
 * I tried to use /shop/<any extension here> but I still redirect to the Shop component. I don't know if it is a good design so I will not put any router / anchors for the {category} for now.
 * Fixed the cards border, Tailwind style
 * Also fixed the React Router, instead of passing props to <Outlet />, I used the useParams. useParams is very slick!
-
-
 * I accessed the id of the cards using 'closest', instead of what I always do (e.target.parentNode.parentNode.....id)
 * Now I got a page for the shop navigation, after lots of struggles debugging. <Found out that the bug is in React Routing, regarding the naming using colon, it should not be adjacent to another link>
+* Fixed the retrieving of information on navigation page (another mapping and filtering)
+* Got bugged on the image size, cropped and unusual stretching all because of align-items: stretch which is by default.
+
+Aug 21, 2023
+* Updated the JSON file and added shoe sizes prop
+* designed the shop navigation page, with the images and sizes (only needs the price and the add to cart button, and some css)
+* shop navigation page now looks nice.
+
+
+* 
+1. fixing the interface and adding the add to cart button 
+2. use the data to grey out other sizes that are false

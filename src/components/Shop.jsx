@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 const Shop = () => {
   const {name} = useParams();
   return(
-      <main className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 content-start gap-3'>
+      <main className='m-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 content-start'>
         {Object.entries(shoesAPI).filter(shoes => shoes[0] === 'general')
           .map(shoes => Object.values(shoes[1]).filter(item =>
             {
