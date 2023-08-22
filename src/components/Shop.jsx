@@ -18,7 +18,7 @@ const Shop = () => {
             })
           .map(shoe=>{
             return(
-              <Link to={'/'+ shoe.id} className='max-w-xs rounded shadow-lg border-2 grid grid-rows-7 content-between p-2 lg:p-4 cursor-pointer transition duration-250 hover:opacity-80'>
+              <Link to={'/'+ shoe.id} key={shoe.id} id={shoe.id} className='max-w-xs rounded shadow-lg border-2 grid grid-rows auto-rows-max p-2 lg:p-4 cursor-pointer transition duration-250 hover:opacity-80'>
                 <ShopRender shoe={shoe} />
               </Link>
             )

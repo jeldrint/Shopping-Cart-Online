@@ -2,7 +2,8 @@ Things to do
 1. Work on the shop navigation page (the page once the user has clicked on an item).
 2. Cart / useState
 3. Homepage contents
-4. Others (bug fixes, etc.)
+4. Final Animation Touch
+5. Others (bug fixes, etc.)
 
 
 
@@ -21,7 +22,11 @@ Aug 21, 2023
 * designed the shop navigation page, with the images and sizes (only needs the price and the add to cart button, and some css)
 * shop navigation page now looks nice.
 
+Aug 22, 2023
+* buttons for sizes now working, with styles and disabled for out of stock sizes.
+* cleaned the DOM (removed some div and sections that are redundant)
+
 
 * 
 1. fixing the interface and adding the add to cart button 
-2. use the data to grey out other sizes that are false
+2. use the data to grey out other sizes that are false ✅
