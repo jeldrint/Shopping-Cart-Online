@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 
-const App = () => {
+const App = ({cartItems}) => {
 
   return(
     <div className="overflow-x-hidden h-screen w-screen flex flex-col items-center">
-      <Header />
+      <Header cartItems={cartItems} />
       <Outlet />
     </div>
 )

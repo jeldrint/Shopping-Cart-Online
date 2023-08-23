@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import ShoppingIcon from '../images/shopping-bag-blk.png'
 import { useState } from "react";
 
-const Header = () => {
-    const [cartItems, setCartItems] = useState([]);
+const Header = ({cartItems}) => {
 
     return (
         <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-800">
@@ -12,7 +11,7 @@ const Header = () => {
             </Link>
             <section className='list-none cursor-pointer flex items-center gap-x-3 md:gap-x-5 lg:gap-x-7 text-slate-300 text-xs md:text-base lg:text-lg xl:text-xl'>
                 <Link to='/shop' className='transition-opacity hover:opacity-50'>
-                    Shop Now!
+                    Shop Now
                 </Link>
                 <Link to='/shop/new-arrival' className='transition-opacity hover:opacity-50 hidden md:inline-block' id='new-arrival'>
                     New Arrival
