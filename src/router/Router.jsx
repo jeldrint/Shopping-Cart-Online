@@ -18,7 +18,7 @@ const Router = () => {
                 {path: 'home', element: <Home />},
                 {path: 'shop', element: <Shop />},
                 {path: 'shop/:name', element: <Shop />},
-                {path: ':id', element: <ShopSolo setCartItems={setCartItems} />}
+                {path: ':id', element: <ShopSolo cartItems={cartItems} setCartItems={setCartItems} />},
             ]
         },
         {

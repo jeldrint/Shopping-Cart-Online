@@ -5,7 +5,7 @@ import SizeGrid from "./SizeGrid";
 import { useState } from "react";
 import CartIcon from '../images/shopping-bag-blk.png'
 
-const ShopSolo = ({setCartItems}) => {
+const ShopSolo = ({cartItems, setCartItems}) => {
     const [sizeSwitch, setSizeSwitch] = useState(null)
     const [errMsg, setErrMsg] = useState(false)
     const {id} = useParams();
@@ -14,7 +14,10 @@ const ShopSolo = ({setCartItems}) => {
         e.preventDefault();
         let shoePrice = shoe.price - shoe.price * shoe.discount;
         if(sizeSwitch){
-            setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice}])
+            setErrMsg(false)
+            cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch) ?
+            cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
+            setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice, 'img': shoe.img, 'qty':1}])
         }else{
             setErrMsg(true)
         }
@@ -26,13 +29,13 @@ const ShopSolo = ({setCartItems}) => {
                 .map(shoes => Object.values(shoes[1]).filter(shoe => shoe.id === id)
                 .map(shoe => {
                     return(
-                        <section key={shoe.id} className='h-full w-full flex flex-col items-center md:flex-row md:justify-center'>
+                        <section key={shoe.id} className='p-10 w-full flex flex-col items-center md:flex-row md:justify-center'>
                             <div>
-                                <img alt={shoe.name} src={shoe.img} className='max-h-[50rem]'/>
+                                <img alt={shoe.name} src={shoe.img} className='max-h-[40rem]'/>
                             </div>
-                            <form className='flex flex-col justify-start items-center gap-y-5 md:gap-y-9 lg:gap-y-2'>
-                                <h1 className='text-lg font-sans font-bold'>{shoe.name}</h1>
-                                <h3 className={errMsg ? 'text-md font-sans font-bold text-red-500': 'text-md font-sans font-bold text-red-500 opacity-0'}>No size specified.</h3>
+                            <form className='flex flex-col justify-start items-center gap-y-5 md:gap-y-3 lg:gap-y-2'>
+                                <h1 className='text-lg font-sans font-bold text-center'>{shoe.name}</h1>
+                                <h3 className={errMsg ? 'text-md font-myFont text-red-500 self-start': 'opacity-0'}>No size specified.</h3>
                                 <SizeGrid shoe={shoe} sizeSwitch={sizeSwitch} setSizeSwitch={setSizeSwitch} />
                                 <div className='flex w-full justify-evenly items-center'>
                                     <div className='text-2xl font-bold'>
