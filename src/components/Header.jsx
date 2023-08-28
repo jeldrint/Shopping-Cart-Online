@@ -4,13 +4,9 @@ import { useState } from "react";
 import Cart from "./Cart";
 
 
-const Header = ({cartItems}) => {
+const Header = ({cartItems, setCartItems}) => {
     const [displayCart, setDisplayCart] = useState(false);
     
-    const handleCartItems = (e) => {
-        setDisplayCart(true)
-    }
-
     return (
         <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-800">
             <Link to='/home' className='text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold transition duration-200 hover:invert'>Fresh
@@ -40,7 +36,7 @@ const Header = ({cartItems}) => {
                     <span className='bg-white text-black text-xs md:text-sm px-1.5 py-0.25 rounded-xl'>{cartItems.reduce((prev,curr)=>prev+curr.qty,0)}</span>
                 </div>
             </section>
-            <Cart cartItems={cartItems} displayCart={displayCart} setDisplayCart={setDisplayCart} />
+            <Cart cartItems={cartItems} setCartItems={setCartItems} displayCart={displayCart} setDisplayCart={setDisplayCart} />
         </header>
     )
 }

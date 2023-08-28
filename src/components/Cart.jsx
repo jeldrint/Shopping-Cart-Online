@@ -1,5 +1,5 @@
 
-const Cart = ({cartItems, displayCart, setDisplayCart}) => {
+const Cart = ({cartItems, setCartItems, displayCart, setDisplayCart}) => {
     const handleAdd = (e,shoe) => {
         e.preventDefault();
         shoe.qty += 1;
@@ -7,6 +7,9 @@ const Cart = ({cartItems, displayCart, setDisplayCart}) => {
     const handleRemove = (e,shoe) => {
         e.preventDefault();
         shoe.qty -= 1;
+    }
+    const handleChange = (e) => {
+        //setCartItems()
     }
     return(
             <section className={displayCart ? 'z-10 overflow-y-auto w-[30rem] h-[80%] bg-white shadow-lg fixed right-[2%] top-[2%] p-4 rounded': 'hidden'}>
@@ -26,7 +29,7 @@ const Cart = ({cartItems, displayCart, setDisplayCart}) => {
                                         <label htmlFor='qty-input'>QTY: </label>
                                         <div className='flex gap-x-1 text-sm'>
                                             <button className={btnStyle} onClick={e=>handleRemove(e,shoe)}>-</button>
-                                            <input id='qty-input' className='rounded border max-w-[30px] text-center' value={shoe.qty} onChange={(e)=>e.target.value}/>
+                                            <input id='qty-input' className='rounded border max-w-[30px] text-center' value={shoe.qty} onChange={handleChange}/>
                                             <button className={btnStyle} onClick={(e)=>handleAdd(e,shoe)}>+</button>
                                         </div>
                                     </form>

@@ -14,9 +14,12 @@ const ShopSolo = ({cartItems, setCartItems}) => {
         e.preventDefault();
         let shoePrice = shoe.price - shoe.price * shoe.discount;
         if(sizeSwitch){
+            console.log(cartItems)
             setErrMsg(false)
             cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch) ?
-            cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
+            //setCartItems([...cartItems,{'qty':}]) :
+            setCartItems(...cartItems) :
+            //cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
             setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice, 'img': shoe.img, 'qty':1}])
         }else{
             setErrMsg(true)

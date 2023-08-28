@@ -13,7 +13,7 @@ const Router = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <App cartItems={cartItems} />,
+            element: <App cartItems={cartItems} setCartItems={setCartItems} />,
             children: [
                 {path: 'home', element: <Home />},
                 {path: 'shop', element: <Shop />},
@@ -27,7 +27,7 @@ const Router = () => {
         },
         {
             path: "cart",
-            element: <Cart cartItems={cartItems} />,
+            element: <Cart />,
         },
     ])
 
