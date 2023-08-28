@@ -25,10 +25,6 @@ const Router = () => {
             path: "contact",
             element: <Contact />,
         },
-        {
-            path: "cart",
-            element: <Cart />,
-        },
     ])
 
     return <RouterProvider router={router} />

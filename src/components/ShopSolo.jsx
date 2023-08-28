@@ -5,6 +5,9 @@ import SizeGrid from "./SizeGrid";
 import { useState } from "react";
 import CartIcon from '../images/shopping-bag-blk.png'
 
+//cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
+
+
 const ShopSolo = ({cartItems, setCartItems}) => {
     const [sizeSwitch, setSizeSwitch] = useState(null)
     const [errMsg, setErrMsg] = useState(false)
@@ -14,13 +17,14 @@ const ShopSolo = ({cartItems, setCartItems}) => {
         e.preventDefault();
         let shoePrice = shoe.price - shoe.price * shoe.discount;
         if(sizeSwitch){
-            console.log(cartItems)
+            if(cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch)){
+                let tempArr = cartItems;
+                tempArr[tempArr.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1;
+                setCartItems(tempArr);
+            }else{
+                setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice, 'img': shoe.img, 'qty':1}])
+            }
             setErrMsg(false)
-            cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch) ?
-            //setCartItems([...cartItems,{'qty':}]) :
-            setCartItems(...cartItems) :
-            //cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
-            setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice, 'img': shoe.img, 'qty':1}])
         }else{
             setErrMsg(true)
         }
