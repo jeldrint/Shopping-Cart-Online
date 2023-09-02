@@ -5,12 +5,9 @@ import SizeGrid from "./SizeGrid";
 import { useState } from "react";
 import CartIcon from '../images/shopping-bag-blk.png'
 
-//cartItems[cartItems.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1 :
-
-
 const ShopSolo = ({cartItems, setCartItems}) => {
     const [sizeSwitch, setSizeSwitch] = useState(null)
-    const [errMsg, setErrMsg] = useState(false)
+    const [errMsg, setErrMsg] = useState('')
     const {id} = useParams();
 
     const addToCart = (e,shoe) => {
@@ -18,15 +15,13 @@ const ShopSolo = ({cartItems, setCartItems}) => {
         let shoePrice = shoe.price - shoe.price * shoe.discount;
         if(sizeSwitch){
             if(cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch)){
-                let tempArr = cartItems;
-                tempArr[tempArr.findIndex(item=>item.name === shoe.name && item.size === sizeSwitch)].qty+=1;
-                setCartItems(tempArr);
+                setErrMsg('duplicate-shoe')
             }else{
-                setCartItems(prev=>[...prev,{'name':shoe.name, 'size':sizeSwitch, 'price': shoePrice, 'img': shoe.img, 'qty':1}])
+                setCartItems(prev=>[...prev,{name: shoe.name, size: sizeSwitch, price: shoePrice, img: shoe.img, qty:1}])
+                setErrMsg('')
             }
-            setErrMsg(false)
         }else{
-            setErrMsg(true)
+            setErrMsg('no-size-selected')
         }
     }
 
@@ -42,7 +37,12 @@ const ShopSolo = ({cartItems, setCartItems}) => {
                             </div>
                             <form className='flex flex-col justify-start items-center gap-y-5 md:gap-y-3 lg:gap-y-2'>
                                 <h1 className='text-lg font-sans font-bold text-center'>{shoe.name}</h1>
-                                <h3 className={errMsg ? 'text-md font-myFont text-red-500 self-start': 'opacity-0'}>No size specified.</h3>
+                                {errMsg === 'no-size-selected' ?
+                                    <h3 className={'text-md font-myFont text-red-500'}>No size specified.</h3> :
+                                errMsg === 'duplicate-shoe' ?
+                                    <h3 className={'text-md font-myFont text-red-500'}>Shoe already added to cart.</h3> :
+                                    <h3 className='text-md font-myFont text-black opacity-0'>Shoe added.</h3>
+                                }
                                 <SizeGrid shoe={shoe} sizeSwitch={sizeSwitch} setSizeSwitch={setSizeSwitch} />
                                 <div className='flex w-full justify-evenly items-center'>
                                     <div className='text-2xl font-bold'>

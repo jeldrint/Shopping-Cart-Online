@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import ShoppingIcon from '../images/shopping-bag-blk.png'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "./Cart";
 
 
 const Header = ({cartItems, setCartItems}) => {
     const [displayCart, setDisplayCart] = useState(false);
+    const [totalPrice, setTotalPrice] = useState(0);
     
+    const handleCart =() => {
+        setDisplayCart(true);
+        setTotalPrice(cartItems.reduce((prev,curr)=>prev+(curr.price*curr.qty),0));
+    }
+
     return (
         <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-800">
             <Link to='/home' className='text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold transition duration-200 hover:invert'>Fresh
@@ -31,12 +37,12 @@ const Header = ({cartItems, setCartItems}) => {
                 <Link to='/contact' className='transition-opacity hover:opacity-50 hidden md:inline-block'>
                     Contact
                 </Link>
-                <div onClick={()=>setDisplayCart(true)} className='flex items-center transition-opacity hover:opacity-70'>
+                <div onClick={handleCart} className='flex items-center transition-opacity hover:opacity-70'>
                     <img alt='shopping-cart' src={ShoppingIcon} className='w-4 md:w-5 lg:w-7 invert'></img>
                     <span className='bg-white text-black text-xs md:text-sm px-1.5 py-0.25 rounded-xl'>{cartItems.reduce((prev,curr)=>prev+curr.qty,0)}</span>
                 </div>
             </section>
-            <Cart cartItems={cartItems} setCartItems={setCartItems} displayCart={displayCart} setDisplayCart={setDisplayCart} />
+            <Cart cartItems={cartItems} setCartItems={setCartItems} displayCart={displayCart} setDisplayCart={setDisplayCart} totalPrice={totalPrice} setTotalPrice={setTotalPrice} />
         </header>
     )
 }

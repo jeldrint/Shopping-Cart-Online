@@ -3,12 +3,16 @@ import App from "../App";
 import Home from "../components/Home";
 import Shop from "../components/Shop";
 import Contact from "../components/Contact";
-import Cart from "../components/Cart";
 import ShopSolo from "../components/ShopSolo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Router = () => {
     const [cartItems, setCartItems] = useState([]);
+
+    useEffect(()=> {
+        
+
+    },[cartItems])
 
     const router = createBrowserRouter([
         {
