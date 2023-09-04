@@ -3,15 +3,28 @@ const Cart = ({cartItems, setCartItems, displayCart, setDisplayCart, totalPrice,
 
     const handleChange = (e,cartShoe) => {
         let tempArr = cartItems;
-        tempArr[tempArr.findIndex(item=>item.id === cartShoe.id)].qty = parseInt(e.target.value);
+        !e.target.value ? tempArr[tempArr.findIndex(item=>item.id === cartShoe.id)].qty = 0 : tempArr[tempArr.findIndex(item=>item.id === cartShoe.id)].qty = parseInt(e.target.value);
+        if(e.target.value> 99){
+            e.target.value = 99;
+            tempArr[tempArr.findIndex(item=>item.id === cartShoe.id)].qty = 99
+        } 
         setCartItems(tempArr);
         setTotalPrice(cartItems.reduce((prev,curr)=>prev+(curr.price*curr.qty),0));
+        if(!cartItems){
+            setTotalPrice(0);
+        }
     }
     const removeItem = (e,cartShoe) =>{
         e.preventDefault();
         let removedItemPrice = cartShoe.price * cartShoe.qty
         setCartItems(current=>current.filter(item=> item.id != cartShoe.id))
         setTotalPrice(cartItems.reduce((prev,curr)=>prev+(curr.price*curr.qty),0)-removedItemPrice);
+    }
+
+    const handleInput = (e) =>{
+        if(!((e.which > 95 && e.which < 106) || (e.which > 47 && e.which < 58) || e.which == 8)) {
+          e.preventDefault();
+        }
     }
 
     return(
@@ -31,7 +44,7 @@ const Cart = ({cartItems, setCartItems, displayCart, setDisplayCart, totalPrice,
                                     <form className='flex gap-x-2 items-center'>
                                         <div>
                                             <label htmlFor='qty-input'>QTY: </label>
-                                            <input defaultValue={cartShoe.qty} min={1} type='number' className='rounded border max-w-[30px] text-center text-sm' onChange={e=>handleChange(e,cartShoe)}/>
+                                            <input defaultValue={cartShoe.qty} min={1} max={99} type='number' className='rounded border max-w-[30px] text-center text-sm' onChange={e=>handleChange(e,cartShoe)} onKeyDown={handleInput}/>
                                         </div>
                                         <span className=' text-xs'>x {'\u20B1 '}{(Math.round(cartShoe.price*100)/100).toLocaleString(undefined, {minimumFractionDigits: 2})}</span>
                                     </form>
@@ -39,7 +52,7 @@ const Cart = ({cartItems, setCartItems, displayCart, setDisplayCart, totalPrice,
                                 </div>
                             </div>
                         </>
-                )
+                    )
                 })}
                 {
                     cartItems.length === 0 ? 
