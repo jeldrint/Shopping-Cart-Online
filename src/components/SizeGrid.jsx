@@ -11,7 +11,7 @@ const SizeGrid = ({shoe, sizeSwitch, setSizeSwitch}) => {
             return(
                 <div key={items[0]}>
                     <label htmlFor='shoe-sizes' className='text-sm md:text-md font-myFont'>{items[0].toLocaleUpperCase()}</label>
-                    <section id='shoe-sizes' className='text-sm text-indigo-800 grid grid-cols-4 max-w-xs gap-2'>
+                    <section key={items[0]} className='text-sm text-indigo-800 grid grid-cols-4 max-w-xs gap-2'>
                         {Object.entries(items[1]).map((size) =>{
                             let sizeID = items[0]+'-'+size[0];
                             return (

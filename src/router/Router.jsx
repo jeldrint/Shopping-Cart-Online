@@ -4,7 +4,7 @@ import Home from "../components/Home";
 import Shop from "../components/Shop";
 import Contact from "../components/Contact";
 import ShopSolo from "../components/ShopSolo";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Router = () => {
     const [cartItems, setCartItems] = useState([]);
