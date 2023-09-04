@@ -5,7 +5,7 @@ import SizeGrid from "./SizeGrid";
 import { useState } from "react";
 import CartIcon from '../images/shopping-bag-blk.png'
 
-const ShopSolo = ({cartItems, setCartItems}) => {
+const ShopSolo = ({cartItems,setCartItems}) => {
     const [sizeSwitch, setSizeSwitch] = useState(null)
     const [errMsg, setErrMsg] = useState('')
     const {id} = useParams();
@@ -17,7 +17,7 @@ const ShopSolo = ({cartItems, setCartItems}) => {
             if(cartItems.find(item=>item.name === shoe.name && item.size === sizeSwitch)){
                 setErrMsg('duplicate-shoe')
             }else{
-                setCartItems(prev=>[...prev,{name: shoe.name, size: sizeSwitch, price: shoePrice, img: shoe.img, qty:1}])
+                setCartItems(prev=>[...prev,{id: shoe.id + '-' + sizeSwitch, name: shoe.name, size: sizeSwitch, price: shoePrice, img: shoe.img, qty:1}])
                 setErrMsg('')
             }
         }else{

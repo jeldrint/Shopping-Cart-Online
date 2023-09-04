@@ -9,11 +9,6 @@ import { useEffect, useState } from "react";
 const Router = () => {
     const [cartItems, setCartItems] = useState([]);
 
-    useEffect(()=> {
-        
-
-    },[cartItems])
-
     const router = createBrowserRouter([
         {
             path: "/",

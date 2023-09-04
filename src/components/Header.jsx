@@ -3,11 +3,10 @@ import ShoppingIcon from '../images/shopping-bag-blk.png'
 import { useEffect, useState } from "react";
 import Cart from "./Cart";
 
-
-const Header = ({cartItems, setCartItems}) => {
+const Header = ({cartItems,setCartItems}) => {
     const [displayCart, setDisplayCart] = useState(false);
     const [totalPrice, setTotalPrice] = useState(0);
-    
+
     const handleCart =() => {
         setDisplayCart(true);
         setTotalPrice(cartItems.reduce((prev,curr)=>prev+(curr.price*curr.qty),0));
