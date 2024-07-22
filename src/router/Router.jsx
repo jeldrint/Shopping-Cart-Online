@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import App from "../App";
 import Home from "../components/Home";
 import Shop from "../components/Shop";
@@ -11,14 +11,20 @@ const Router = () => {
 
     const router = createBrowserRouter([
         {
-            path: "/",
+            path: '/',
+            element: <Navigate to='/fresh-kicks' />
+        },
+        {
+            path: '/fresh-kicks',
+            element: <Navigate to='/fresh-kicks/home' />
+        },
+        {
+            path: "/fresh-kicks/home",
             element: <App cartItems={cartItems} setCartItems={setCartItems} />,
-            children: [
-                {path: 'home', element: <Home />},
-                {path: 'shop', element: <Shop />},
-                {path: 'shop/:name', element: <Shop />},
-                {path: ':id', element: <ShopSolo cartItems={cartItems} setCartItems={setCartItems} />},
-            ]
+        },
+        {
+            path: '/fresh-kicks/shop',
+            element: <Shop />
         },
         {
             path: "contact",
@@ -30,3 +36,4 @@ const Router = () => {
 }
 
 export default Router;
+
