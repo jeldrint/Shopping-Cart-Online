@@ -8,9 +8,7 @@ const App = ({cartItems,setCartItems}) => {
   return(
     <div className="min-h-screen h-full w-full flex flex-col justify-between items-center">
         <Header cartItems={cartItems} setCartItems={setCartItems} />
-        <ImageCarousel />
-        <ImageCarousel />
-        <Footer />
+        <Outlet />
     
     </div>
 )

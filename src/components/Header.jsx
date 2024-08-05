@@ -14,11 +14,11 @@ const Header = ({cartItems,setCartItems}) => {
 
     return (
         <header className="sticky top-0 z-10 w-full px-5 py-9 md:p-8 lg:p-9 flex items-center justify-between font-myFont bg-indigo-800">
-            <Link to='/fresh-kicks/home' className='text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold transition duration-200 hover:invert'>Fresh
+            <Link to='/home' className='text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold transition duration-200 hover:invert'>Fresh
                 <span className='text-slate-100'>Kicks</span>
             </Link>
             <section className='list-none cursor-pointer flex items-center gap-x-3 md:gap-x-5 lg:gap-x-7 text-slate-300 text-xs md:text-base lg:text-lg xl:text-xl'>
-                <Link to='/fresh-kicks/shop' className='transition-opacity hover:opacity-50 hidden md:inline-block'>
+                <Link to='/shop' className='transition-opacity hover:opacity-50 hidden md:inline-block'>
                     Shop Now
                 </Link>
                 <Link to='/shop/new-arrival' className='transition-opacity hover:opacity-50 hidden md:inline-block' id='new-arrival'>

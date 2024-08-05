@@ -11,6 +11,7 @@ const ShopSolo = ({cartItems,setCartItems}) => {
     const {id} = useParams();
 
     const addToCart = (e,shoe) => {
+        //console.log(cartItems)
         e.preventDefault();
         let shoePrice = shoe.price - shoe.price * shoe.discount;
         if(sizeSwitch){
